@@ -1,11 +1,11 @@
-@import "_allPets.scss";
-@import "_petDetail.scss";
-@import "_couchView.scss";
-@import "_petTime.scss";
-@import "_petAdminDetails.scss";
-@import "_petListAdmin.scss";
-@import "_addPetAdmin.scss";
-@import "_home.scss";
+@import "_allPets";
+@import "_petDetail";
+@import "_couchView";
+@import "_petTime";
+@import "_petAdminDetails";
+@import "_petListAdmin";
+@import "_addPetAdmin";
+@import "_home";
 
 $lightbrown: #B69783;
 $beige: #E5DCBD;
@@ -44,6 +44,6 @@ header {
   }
 
   .cart {
-    margin-left: 30%;
+    margin-left: 10%;
   }
 } // end header

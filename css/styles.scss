@@ -1,3 +1,12 @@
+@import "_allPets.scss";
+@import "_petDetail.scss";
+@import "_couchView.scss";
+@import "_petTime.scss";
+@import "_petAdminDetails.scss";
+@import "_petListAdmin.scss";
+@import "_addPetAdmin.scss";
+@import "_home.scss";
+
 $lightbrown: #B69783;
 $beige: #E5DCBD;
 $highlight1: #89767C;
@@ -38,10 +47,3 @@ header {
     margin-left: 30%;
   }
 } // end header
-
-.puppyoverlay {
-  width: 100%;
-  // position: relative;
-  top: 30%;
-  left: 4.5%;
-}

@@ -1,3 +1,8 @@
+.puppyoverlay {
+  width: 100%;
+  top: 30%;
+  left: 4.5%; }
+
 body {
   background-color: #B69783;
   padding: 5%; }
@@ -14,40 +19,6 @@ header {
     display: inline-block;
     padding: .75em 0 0 4.5em; }
   header .cart {
-    margin-left: 5%; }
-
-.puppyoverlay {
-  width: 100%;
-  top: 30%;
-  left: 4.5%;
-  z-index: -1; }
-
-.homeBox {
-  border: 4px solid #fff;
-  padding: 2%;
-  margin-top: 0%;
-  margin-right: 80%;
-  text-align: center;
-  color: #fff;
-  z-index: 1;
-  position: absolute;
-  left: 50%;
-  bottom: 65%;
-  width: 10%;
-  font-family: sans-serif; }
-
-.homeBox2 {
-  border: 4px solid #fff;
-  padding: 2%;
-  margin-top: 0%;
-  margin-right: 80%;
-  text-align: center;
-  color: #fff;
-  z-index: 1;
-  position: absolute;
-  left: 32%;
-  bottom: 65%;
-  width: 10%;
-  font-family: sans-serif; }
+    margin-left: 30%; }
 
 /*# sourceMappingURL=styles.css.map */

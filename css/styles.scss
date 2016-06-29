@@ -6,6 +6,7 @@
 @import "_petListAdmin";
 @import "_addPetAdmin";
 @import "_home";
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
 
 $lightbrown: #B69783;
 $beige: #E5DCBD;
@@ -13,6 +14,7 @@ $highlight1: #89767C;
 $highlight2: #9F99A5;
 $highlight3: #675B65;
 $navFonts: sans-serif;
+$headerFont: "Indie Flower";
 
 body {
   background-color: $lightbrown;
@@ -28,7 +30,8 @@ header {
   font-family: $navFonts;
   color: #fff;
   width: 100%;
-  height: 3em;
+  height: 4em;
+  padding-bottom: 2em;
 
   nav {
 
@@ -40,10 +43,17 @@ header {
 
   li {
     display: inline-block;
-    padding: .75em 0 0 4.5em;
+    padding: .75em 0 0 1em;
+
   }
 
   .cart {
     margin-left: 10%;
   }
-} // end header
+}
+
+.headerName {
+  font-family:"Indie Flower";
+  font-size: 60px;
+}
+ // end header

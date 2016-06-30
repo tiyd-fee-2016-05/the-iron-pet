@@ -4,9 +4,9 @@
 .allPetsContainer {
   background-color: white;
   position: absolute;
-  top: 20%;
+  top: 21%;
   left: 3.5%;
-  right: 3.5;
+  right: 0%;
   margin-left: 1.5%;
   margin-right: 5%;
   padding-top: 1%; }
@@ -14,12 +14,13 @@
 .col-1-4, .col-3-12 {
   width: 22%;
   margin: 1%;
-  margin-top: 2%;
+  margin-top: 5%;
   text-align: center; }
 
 .dogpic4 {
-  width: 95%;
-  height: auto;
+  width: 11em;
+  /* 95/16 */
+  height: 6em;
   margin-left: 5%; }
 
 .pupName {

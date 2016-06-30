@@ -1,16 +1,15 @@
-<main>
-  <img class="pet-profile-pic" src="../images/dog-4.jpg">
+<main ng-controller="PetController as pets">
+  <img ng-repeat= "pet in petList" ng-show="$index ===0"  class="pet-profile-pic" src="{{pet.PetPhoto}}">
   <a class="continue-browsing" href="#/allPets"><span class="fa fa-angle-left" aria-hidden="true"></span>
     <h3>continue browsing</h3>
   </a>
-  <section class="pet-summary">
-    <h1 class="detail-pet-name">Sparky</h1>
-    <h2 class="detail-pet-price">$30.00/Day</h2>
-    <p>Jax in one word is fantastic! He is a big bundle of love and affection. Jax loves to play with other dogs,
-       he is a young dog who sees the world through puppy goggles.</p>
+  <section class="pet-summary"  ng-repeat= "pet in petList" ng-show="$index === 0">
+    <h1 class="detail-pet-name">{{pet.PetName}}</h1>
+    <h2 class="detail-pet-price">{{pet.PetPrice | currency}}/Day</h2>
+    <p>{{pet.PetDescription}}</p>
     <a href="#/MyCouch"><button>Add to couch</button></a>
   </section>
-  <section class="pet-details">
+  <section class="pet-details" ng-controller="PetController as pets">
     <ul>
       <!-- About puppy -->
       <div class="line"></div>

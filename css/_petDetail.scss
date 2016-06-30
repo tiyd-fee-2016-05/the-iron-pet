@@ -1,0 +1,97 @@
+@import "../bower_components/susy/sass/susy";
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+$bigFonts: "Lato", sans-serif;
+$bigFontsSize: 2.5em;
+$beige: #E8E5E0;
+$highlight2: #9F99A5;
+$highlight3: #675B65;
+
+$susy: (
+  columns: 12,
+  container: 100%
+);
+
+  main {
+    @include container;
+    height: 36em;
+    box-sizing: border-box;
+    font-family: $bigFonts;
+  } // end main
+
+  .continue-browsing {
+    @include span( 3 of 12);
+    position: relative;
+    top: 2.5em;
+    left: 2%;
+    text-decoration: none;
+    color: $beige;
+  }
+
+  .pet-profile-pic,
+  .continue-browsing {
+    font-size: $bigFontsSize - 1.15em;
+  }
+
+  .detail-pet-name {
+    font-size: $bigFontsSize;
+  }
+
+  .detail-pet-price {
+    padding: .5em 0 .5em 0;
+    font-size: $bigFontsSize - 1em;
+  }
+
+  p {
+    line-height: 1.75em;
+    padding-bottom: 2em;
+    font-weight: 300;
+  }
+
+  .fa {
+    @include span( 1 of 12);
+    position: relative;
+    left: 2%;
+  }
+
+  button {
+    width: 10em;
+    height: 3em;
+    background-color: $beige;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.05em;
+  }
+
+  .pet-profile-pic {
+    @include span( 6 of 12 );
+    margin-top: 2.5em;
+  }
+
+  .pet-summary {
+    @include span( 6 of 12 );
+    margin: -27% 0 0 53.5%;
+    color: #000;
+  }
+
+  .pet-details {
+    @include span( 6 of 12 );
+    margin: -7% 0 0 53.5%;
+
+    .details-heading {
+      display: inline-block;
+      font-size: 1.25em;
+      padding: 0 2.5em 0 0;
+    }
+
+    .line {
+      content: "";
+      height: 1px;
+      width: 65%;
+      background-color: $beige;
+      position: relative;
+      top: 1.75em;
+    }
+  }

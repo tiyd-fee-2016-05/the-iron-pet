@@ -1,0 +1,20 @@
+{
+  "name": "Sinovia",
+  "homepage": "https://github.com/tiyd-fee-2016-05/the-iron-pet",
+  "authors": [
+    "Sinovia Mayfield <somayfield@gmail"
+  ],
+  "description": "Balto",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}

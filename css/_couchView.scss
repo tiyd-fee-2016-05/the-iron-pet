@@ -1,0 +1,84 @@
+@import "../bower_components/susy/sass/susy";
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+$bigFonts: "Lato", sans-serif;
+$bigFontsSize: 2.5em;
+$beige: #E8E5E0;
+$highlight2: #9F99A5;
+$highlight3: #675B65;
+
+$susy: (
+  columns: 12,
+  container: 100%
+);
+
+  main {
+    @include container;
+    height: 36em;
+    box-sizing: border-box;
+    font-family: $bigFonts;
+  } // end main
+
+  .couch-h1 {
+    font-size: $bigFontsSize - .75em;
+    margin: 1em 0 0 1.07em;
+  }
+
+  .pet-couch-pic {
+    @include span( 2 of 12 );
+    margin-top: 2.5em;
+  }
+
+  .couch-pet-name {
+    font-size: 1.75em;
+  }
+
+  .couch-days {
+    position: relative;
+    top: .35em;
+    right: 7%;
+  }
+
+  .cart-details {
+    @include span( 2 of 12 );
+    display: inline-block;
+    margin: 6.5% 0 0 5%;
+  }
+
+  .cart-num-days {
+    position: relative;
+    top: .35em;
+    right: 18%;
+  }
+
+  .fa-times {
+    position: absolute;
+    top: 23.35%;
+    left: 55%;
+    cursor: pointer;
+  }
+
+  .checkout-pad {
+    // margin: 0 0 5% 35%;
+    position: absolute;
+    right: 5%;
+  }
+
+  .checkout-total {
+    position: absolute;
+    top: 40%;
+    left: 81%;
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+
+  .checkout-button {
+    width: 7em;
+    height: 2em;
+    border-radius: 5px;
+    position: absolute;
+    top: 105%;
+    right: -42%;
+    cursor: pointer;
+    font-size: 1.05em;
+  }

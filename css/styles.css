@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import "https://fonts.googleapis.com/css?family=Indie+Flower";
 .allPetsContainer {
   background-color: white;
@@ -112,6 +114,160 @@
     display: none !important;
     width: 0;
     height: 0; } }
+main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 36em;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif; }
+  main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.continue-browsing {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  position: relative;
+  top: 2.5em;
+  left: 2%;
+  text-decoration: none;
+  color: #E8E5E0; }
+
+.pet-profile-pic,
+.continue-browsing {
+  font-size: 1.35em; }
+
+.detail-pet-name {
+  font-size: 2.5em; }
+
+.detail-pet-price {
+  padding: .5em 0 .5em 0;
+  font-size: 1.5em; }
+
+p {
+  line-height: 1.75em;
+  padding-bottom: 2em;
+  font-weight: 300; }
+
+.fa {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  position: relative;
+  left: 2%; }
+
+button {
+  width: 10em;
+  height: 3em;
+  background-color: #E8E5E0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.05em; }
+
+.pet-profile-pic {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 2.5em; }
+
+.pet-summary {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: -27% 0 0 53.5%;
+  color: #000; }
+
+.pet-details {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: -7% 0 0 53.5%; }
+  .pet-details .details-heading {
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0 2.5em 0 0; }
+  .pet-details .line {
+    content: "";
+    height: 1px;
+    width: 65%;
+    background-color: #E8E5E0;
+    position: relative;
+    top: 1.75em; }
+
+main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 36em;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif; }
+  main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.couch-h1 {
+  font-size: 1.75em;
+  margin: 1em 0 0 1.07em; }
+
+.pet-couch-pic {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 2.5em; }
+
+.couch-pet-name {
+  font-size: 1.75em; }
+
+.couch-days {
+  position: relative;
+  top: .35em;
+  right: 7%; }
+
+.cart-details {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline-block;
+  margin: 6.5% 0 0 5%; }
+
+.cart-num-days {
+  position: relative;
+  top: .35em;
+  right: 18%; }
+
+.fa-times {
+  position: absolute;
+  top: 23.35%;
+  left: 55%;
+  cursor: pointer; }
+
+.checkout-pad {
+  position: absolute;
+  right: 5%; }
+
+.checkout-total {
+  position: absolute;
+  top: 40%;
+  left: 81%;
+  font-size: 1.5em;
+  line-height: 1.6em; }
+
+.checkout-button {
+  width: 7em;
+  height: 2em;
+  border-radius: 5px;
+  position: absolute;
+  top: 105%;
+  right: -42%;
+  cursor: pointer;
+  font-size: 1.05em; }
+
 .invoiceContainer {
   position: absolute;
   left: 8%;

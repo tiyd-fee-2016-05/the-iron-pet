@@ -43,127 +43,138 @@ mainApp.config(function($routeProvider) {
 });
 
 
-mainApp.controller('PetController', function($scope){
+
+
+
+
+
+
+mainApp.controller('PetController', function($scope, $http){
   $scope.goToDetails = function($pet) {
     $scope.indexClicked = $scope.petList.indexOf($pet);
     alert($scope.indexClicked);
+
+    $http({
+      method: 'GET',
+      url: 'http://localhost:3007/dogs'
+    }).then(function successCallback(data) {
+        // data = $scope.petList
+        console.log(data)
+      });
     }
 
-
 // $scope.message = "This is a test message"
-
-
-  $scope.petList =
-[
-  {
-  PetNumber: "0",
-  PetName: 'Friendly',
-  PetPhoto: "images/dog-3.jpg",
-  PetBreed:'Schnauzer',
-  PetPrice: '30',
-  FavActivity:'Napping',
-  FavSnack:'Beggin Strips',
-  PetDescription:'A loveable young lady with a heart of gold!'},
-
-  {
-  PetNumber: "1",
-  PetName: 'Leo',
-  PetPhoto: "images/dog-4.jpg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-  PetNumber: "2",
-  PetName: 'Milo',
-  PetPhoto: "images/dog-5.jpg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-    PetNumber: "3",
-    PetName: 'Barry',
-  PetPhoto: "images/dog-6.jpg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-    PetNumber: "4",
-    PetName: 'Buster',
-  PetPhoto: "images/dog-7.jpg",
-  PetBreed:'Schnauzer',
-  FavActivity:'Napping',
-  FavSnack:'Beggin Strips',
-  PetDescription:'A loveable young lady with a heart of gold!'},
-
-  {
-    PetNumber: "5",
-    PetName: 'Hank',
-  PetPhoto: "images/dog-8.jpeg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-    PetNumber: "6",
-    PetName: 'Reggie',
-  PetPhoto: "images/dog-9.jpg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-    PetNumber: "7",
-    PetName: 'Nathaniel',
-  PetPhoto: "images/dog-10.jpeg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-    PetNumber: "8",
-    PetName: 'Morgan',
-    PetPhoto: "images/dog-11.jpg",
-  PetBreed:'Schnauzer',
-  FavActivity:'Napping',
-  FavSnack:'Beggin Strips',
-  PetDescription:'A loveable young lady with a heart of gold!'},
-
-  {
-    PetNumber: "9",
-    PetName: 'Tyrion',
-  PetPhoto: "images/dog-1.jpg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-    PetNumber: "10",
-    PetName: 'Hermione',
-  PetPhoto: "images/dog-2.jpg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-
-  {
-    PetNumber: "11",
-    PetName: 'Katniss',
-  PetPhoto: "images/dog-5.jpg",
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-]
+//   $scope.petList =
+// [
+//   {
+//   PetNumber: "0",
+//   PetName: 'Friendly',
+//   PetPhoto: "images/dog-3.jpg",
+//   PetBreed:'Schnauzer',
+//   PetPrice: '30',
+//   FavActivity:'Napping',
+//   FavSnack:'Beggin Strips',
+//   PetDescription:'A loveable young lady with a heart of gold!'},
+//
+//   {
+//   PetNumber: "1",
+//   PetName: 'Leo',
+//   PetPhoto: "images/dog-4.jpg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//   PetNumber: "2",
+//   PetName: 'Milo',
+//   PetPhoto: "images/dog-5.jpg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//     PetNumber: "3",
+//     PetName: 'Barry',
+//   PetPhoto: "images/dog-6.jpg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//     PetNumber: "4",
+//     PetName: 'Buster',
+//   PetPhoto: "images/dog-7.jpg",
+//   PetBreed:'Schnauzer',
+//   FavActivity:'Napping',
+//   FavSnack:'Beggin Strips',
+//   PetDescription:'A loveable young lady with a heart of gold!'},
+//
+//   {
+//     PetNumber: "5",
+//     PetName: 'Hank',
+//   PetPhoto: "images/dog-8.jpeg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//     PetNumber: "6",
+//     PetName: 'Reggie',
+//   PetPhoto: "images/dog-9.jpg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//     PetNumber: "7",
+//     PetName: 'Nathaniel',
+//   PetPhoto: "images/dog-10.jpeg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//     PetNumber: "8",
+//     PetName: 'Morgan',
+//     PetPhoto: "images/dog-11.jpg",
+//   PetBreed:'Schnauzer',
+//   FavActivity:'Napping',
+//   FavSnack:'Beggin Strips',
+//   PetDescription:'A loveable young lady with a heart of gold!'},
+//
+//   {
+//     PetNumber: "9",
+//     PetName: 'Tyrion',
+//   PetPhoto: "images/dog-1.jpg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//     PetNumber: "10",
+//     PetName: 'Hermione',
+//   PetPhoto: "images/dog-2.jpg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+//
+//   {
+//     PetNumber: "11",
+//     PetName: 'Katniss',
+//   PetPhoto: "images/dog-5.jpg",
+//   PetBreed:'Schnauzer2',
+//   FavActivity:'Napping2',
+//   FavSnack:'Beggin Strips2',
+//   PetDescription:'A loveable young lady with a heart of gold!2'},
+// ]
 // $scope.PetID = ($scope.petList.indexOf($pet)).toString();
 
 

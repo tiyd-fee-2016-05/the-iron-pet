@@ -8,9 +8,11 @@
 
 <div class="grid grid-pad" ng-controller="PetController as pets">
     <div class="col-1-4"  ng-repeat= "pet in petList">
-  <img class="dogpic4" src= {{pet.PetPhoto}}>
+  <img class="dogpic4" src= #>
   <span class="pupName">{{pet.PetName}}</span>
 
   <br>
   <a href="#/petdetails"<button class="pupDetails" ng-click="goToDetails(pet)">Profile <i class="fa fa-paw" aria-hidden="true"></i></button></a>
     </div>
+
+    <script src="js/PetController.js"></script>

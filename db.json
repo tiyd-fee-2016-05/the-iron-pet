@@ -1,0 +1,132 @@
+{
+  "dogs": [
+  {
+"PetNumber": "0",
+"PetName": "Friendly",
+"PetPhoto": "images/dog-3.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+{
+"PetNumber": "1",
+"PetName": "Leo",
+"PetPhoto": "images/dog-4.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+"PetNumber": "2",
+"PetName": "Milo",
+"PetPhoto": "images/dog-5.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+{
+  "PetNumber": "3",
+  "PetName": "Barry",
+"PetPhoto": "images/dog-6.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+  "PetNumber": "4",
+  "PetName": "Buster",
+"PetPhoto": "images/dog-7.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+  "PetNumber": "5",
+  "PetName": "Hank",
+"PetPhoto": "images/dog-8.jpeg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+{
+  "PetNumber": "6",
+  "PetName": "Reggie",
+"PetPhoto": "images/dog-9.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+  "PetNumber": "7",
+  "PetName": "Nathaniel",
+"PetPhoto": "images/dog-10.jpeg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+  "PetNumber": "8",
+  "PetName": "Morgan",
+  "PetPhoto": "images/dog-11.jpg",
+  "PetBreed":"Schnauzer",
+  "PetPrice": "30",
+  "FavActivity":"Napping",
+  "FavSnack":"Beggin Strips",
+  "PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+  "PetNumber": "9",
+  "PetName": "Tyrion",
+"PetPhoto": "images/dog-1.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+  "PetNumber": "10",
+  "PetName": "Hermione",
+"PetPhoto": "images/dog-2.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+},
+
+{
+  "PetNumber": "11",
+  "PetName": "Katniss",
+"PetPhoto": "images/dog-5.jpg",
+"PetBreed":"Schnauzer",
+"PetPrice": "30",
+"FavActivity":"Napping",
+"FavSnack":"Beggin Strips",
+"PetDescription":"A loveable young lady with a heart of gold!"
+}
+]
+}

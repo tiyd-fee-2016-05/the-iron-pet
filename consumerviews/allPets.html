@@ -1,78 +1,17 @@
-<div class= "allPetsContainer"> Test
 
+<div class= "allPetsContainer">
+  <a href="#/checkout">{{message}}</a>
 
 
 <!-- Start Row 1 -->
-<div class="grid grid-pad">
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
+
+<div class="grid grid-pad" >
+    <div class="col-1-4"  ng-repeat= "pets in petList">
+  <img class="dogpic4" src="/images/dog-4.jpg">
+  <span class="pupName">Pet Name </span>
+  <br>
+  <button class="pupDetails">Profile <i class="fa fa-paw" aria-hidden="true"></i></button>
     </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-</div>
-<!-- End Row 1 -->
-<!-- Start Row 2 -->
-<div class="grid grid-pad">
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-</div>
-<!-- End Row 2 -->
-<!-- Start Row 3 -->
-<div class="grid grid-pad">
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-    <div class="col-1-4">
-       <div class="content">
-           <h3>col-1-4</h3>
-       </div>
-    </div>
-</div>
-<!-- End Row 3 -->
+
 
 </div>

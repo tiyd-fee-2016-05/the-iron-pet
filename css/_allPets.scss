@@ -1,25 +1,45 @@
 .allPetsContainer {
-  width:100%;
-  background-color: white;
-  height: 100%;
+
+   background-color: white;
+   position: absolute;
+    top: 20%;
+    left: 3.5%;
+    right: 3.5;
+    margin-left: 1.5%;
+    margin-right: 5%;
+    padding-top: 1%;
+
 }
 
+.col-1-4, .col-3-12 {
+	width: 22%;
+  margin: 1%;
+  margin-top: 2%;
+  text-align: center;
+}
 
+.dogpic4{
+width:95%;
+height: auto;
+margin-left: 5%
+}
 
+.pupName {
+  font-family: sans-serif;
+  font-size: 35px;
+  color: #675B65;
+  margin-left: 10%
+}
 
+.pupDetails {
+  border: 1px solid white;;
+  background-color: #675B65;
+  font-family: sans-serif;
+  color: white;
+  height:25px;
+  width: 90px;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -82,16 +102,8 @@
 	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
-.push-right {
-	float: right;
-}
 
 
-.col-1-4, .col-3-12 {
-	width: 22%;
-  margin: 1%;
-  border: 1px solid black;
-}
 
 @media handheld, only screen and (max-width: 767px) {
 	.grid {
@@ -123,79 +135,6 @@
 		padding-left: 0;
 		padding-right: 10px; /* column-space */
 		padding-bottom: 0;
-	}
-
-	.mobile-col-1-1 {
-		width: 100%;
-	}
-	.mobile-col-2-3, .mobile-col-8-12 {
-		width: 66.66%;
-	}
-
-	.mobile-col-1-2, .mobile-col-6-12 {
-		width: 50%;
-	}
-
-	.mobile-col-1-3, .mobile-col-4-12 {
-		width: 33.33%;
-	}
-
-	.mobile-col-1-4, .mobile-col-3-12 {
-		width: 25%;
-	}
-
-	.mobile-col-1-5 {
-		width: 20%;
-	}
-
-	.mobile-col-1-6, .mobile-col-2-12 {
-		width: 16.667%;
-	}
-
-	.mobile-col-1-7 {
-		width: 14.28%;
-	}
-
-	.mobile-col-1-8 {
-		width: 12.5%;
-	}
-
-	.mobile-col-1-9 {
-		width: 11.1%;
-	}
-
-	.mobile-col-1-10 {
-		width: 10%;
-	}
-
-	.mobile-col-1-11 {
-		width: 9.09%;
-	}
-
-	.mobile-col-1-12 {
-		width: 8.33%
-	}
-
-	/* Layout Columns */
-
-	.mobile-col-11-12 {
-		width: 91.66%
-	}
-
-	.mobile-col-10-12 {
-		width: 83.333%;
-	}
-
-	.mobile-col-9-12 {
-		width: 75%;
-	}
-
-	.mobile-col-5-12 {
-		width: 41.66%;
-	}
-
-	.mobile-col-7-12 {
-		width: 58.33%
 	}
 
 	.hide-on-mobile {

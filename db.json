@@ -1,0 +1,218 @@
+{
+  "dogs": [
+    {
+      "PetNumber": "0",
+      "PetName": "Friendly",
+      "PetPhoto": "images/dog-3.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "1",
+      "PetName": "Leo",
+      "PetPhoto": "images/dog-4.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "2",
+      "PetName": "Milo",
+      "PetPhoto": "images/dog-5.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "3",
+      "PetName": "Barry",
+      "PetPhoto": "images/dog-6.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "4",
+      "PetName": "Buster",
+      "PetPhoto": "images/dog-7.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "5",
+      "PetName": "Hank",
+      "PetPhoto": "images/dog-8.jpeg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "6",
+      "PetName": "Reggie",
+      "PetPhoto": "images/dog-9.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "7",
+      "PetName": "Nathaniel",
+      "PetPhoto": "images/dog-10.jpeg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "8",
+      "PetName": "Morgan",
+      "PetPhoto": "images/dog-11.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "9",
+      "PetName": "Tyrion",
+      "PetPhoto": "images/dog-1.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "10",
+      "PetName": "Hermione",
+      "PetPhoto": "images/dog-2.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": "11",
+      "PetName": "Katniss",
+      "PetPhoto": "images/dog-5.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": "30",
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!"
+    }
+  ],
+  "dogs-index": [
+    {
+      "index": 0,
+      "id": 9
+    },
+    {
+      "index": 2,
+      "id": 10
+    },
+    {
+      "index": 3,
+      "id": 11
+    },
+    {
+      "index": 5,
+      "id": 12
+    },
+    {
+      "index": 4,
+      "id": 13
+    },
+    {
+      "index": 6,
+      "id": 14
+    },
+    {
+      "index": 2,
+      "id": 15
+    },
+    {
+      "index": 1,
+      "id": 16
+    },
+    {
+      "index": 2,
+      "id": 17
+    },
+    {
+      "index": 2,
+      "id": 18
+    },
+    {
+      "index": 2,
+      "id": 19
+    },
+    {
+      "index": 2,
+      "id": 20
+    },
+    {
+      "index": 8,
+      "id": 21
+    },
+    {
+      "index": 7,
+      "id": 22
+    },
+    {
+      "index": 11,
+      "id": 23
+    },
+    {
+      "index": 6,
+      "id": 24
+    },
+    {
+      "index": 4,
+      "id": 25
+    },
+    {
+      "index": 7,
+      "id": 26
+    },
+    {
+      "index": 7,
+      "id": 27
+    },
+    {
+      "index": 2,
+      "id": 28
+    },
+    {
+      "index": 5,
+      "id": 29
+    },
+    {
+      "index": 4,
+      "id": 30
+    },
+    {
+      "index": 8,
+      "id": 31
+    }
+  ]
+}

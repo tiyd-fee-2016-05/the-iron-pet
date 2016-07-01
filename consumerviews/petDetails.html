@@ -1,11 +1,13 @@
-<main>
+<main ng-controller="PetController as pets">
   <img class="pet-profile-pic" src="../images/dog-4.jpg">
   <a class="continue-browsing" href="#/allPets"><span class="fa fa-angle-left" aria-hidden="true"></span>
     <h3>continue browsing</h3>
   </a>
   <section class="pet-summary">
-    <h1 class="detail-pet-name">Sparky</h1>
-    <h2 class="detail-pet-price">$30.00/Day</h2>
+
+    // 2 lines below are new!!!!!!!!!
+    <h1 class="detail-pet-name">{{petList[petIndex].PetName}}</h1>
+    <h2 class="detail-pet-price">{{petList[petIndex].PetPrice}}</h2>
     <p>Jax in one word is fantastic! He is a big bundle of love and affection. Jax loves to play with other dogs,
        he is a young dog who sees the world through puppy goggles.</p>
     <a href="#/MyCouch"><button>Add to couch</button></a>

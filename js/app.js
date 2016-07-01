@@ -1,5 +1,6 @@
 var mainApp = angular.module("myApp", ['ngRoute']);
 
+
 mainApp.config(function($routeProvider) {
   $routeProvider
   //Consumer View Routes
@@ -41,81 +42,38 @@ mainApp.config(function($routeProvider) {
     });
 });
 
+mainApp.controller('PetController', function($scope, $http){
+  var url = "http://localhost:3007/dogs"
 
-mainApp.controller('PetController', function($scope){
-  $scope.petList =
-[
-  {PetName: 'Friendly',
-  PetBreed:'Schnauzer',
-  FavActivity:'Napping',
-  FavSnack:'Beggin Strips',
-  PetDescription:'A loveable young lady with a heart of gold!'},
-  {PetName: 'Leo',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
+     $http.get(url).success( function(data) {
+        $scope.petList = data;
+        console.log(data)
+     });
 
-  {PetName: 'Milo',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
 
-  {PetName: 'Barry',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
+     // new stuff added before commit/push
+    $scope.goToDetails = function(pet) {
+      $scope.indexClicked = JSON.stringify({ index: $scope.petList.indexOf(pet) });
+      console.log( $scope.indexClicked );
 
-  {PetName: 'Buster',
-  PetBreed:'Schnauzer',
-  FavActivity:'Napping',
-  FavSnack:'Beggin Strips',
-  PetDescription:'A loveable young lady with a heart of gold!'},
+      $http.post('http://localhost:3007/dogs-index', $scope.indexClicked )
+      .then(function successCallback(response) {
+        console.log( response.data.index );
+      }, function errorCallback(response) {
+        console.log( $scope.indexClicked );
+      });
 
-  {PetName: 'Hank',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
 
-  {PetName: 'Reggie',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
+    } // end goToDetails
 
-  {PetName: 'Nathaniel',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
+      $http.get("http://localhost:3007/dogs-index").success( function(data) {
+         $scope.petIndex = data[data.length - 1].index;
+         console.log($scope.petIndex[$scope.indexClicked]);
+      });
 
-  {PetName: 'Captain Morgan',
-  PetBreed:'Schnauzer',
-  FavActivity:'Napping',
-  FavSnack:'Beggin Strips',
-  PetDescription:'A loveable young lady with a heart of gold!'},
 
-  {PetName: 'Tyrion',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
 
-  {PetName: 'Hermione',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
 
-  {PetName: 'Katniss',
-  PetBreed:'Schnauzer2',
-  FavActivity:'Napping2',
-  FavSnack:'Beggin Strips2',
-  PetDescription:'A loveable young lady with a heart of gold!2'},
-]
-  $scope.message = "This is a test message."
 
-});
+
+  });

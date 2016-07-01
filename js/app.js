@@ -50,18 +50,13 @@ mainApp.config(function($routeProvider) {
 
 
 mainApp.controller('PetController', function($scope, $http){
-  $scope.goToDetails = function($pet) {
-    $scope.indexClicked = $scope.petList.indexOf($pet);
-    alert($scope.indexClicked);
+  var url = "http://localhost:3007/dogs"
 
-    $http({
-      method: 'GET',
-      url: 'http://localhost:3007/dogs'
-    }).then(function successCallback(data) {
-        // data = $scope.petList
+     $http.get(url).success( function(data) {
+        $scope.petList = data;
         console.log(data)
-      });
-    }
+     });
+  });
 
 // $scope.message = "This is a test message"
 //   $scope.petList =
@@ -176,6 +171,3 @@ mainApp.controller('PetController', function($scope, $http){
 //   PetDescription:'A loveable young lady with a heart of gold!2'},
 // ]
 // $scope.PetID = ($scope.petList.indexOf($pet)).toString();
-
-
-});

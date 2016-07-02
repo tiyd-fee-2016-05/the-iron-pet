@@ -100,29 +100,42 @@ mainApp.controller('PetController', function($scope, $http){
 
 
 
-       
+       $scope.invoice = [ {numDays: 1} ];
 
 
-       $scope.total = function() {
-           var total = 0;
-           angular.forEach($scope.couchIndex, function(item) {
-               total += item.CouchPetPrice;
-           })
+      $scope.invoice.push({
+        numDays: 1
+      });
 
-           return total;
-       }
+      // $scope.numDays = $('.couchDays[name="couchDogDays"]').val();
+      $scope.couchDogDays = {numDays: 1};
+
+      $scope.total = function() {
+         var days = 0;
+         var total = 0;
+
+         angular.forEach($scope.invoice, function(item) {
+             days = item.numDays;
+             console.log(item.numDays);
+         }) // end forEach for couchIndex
+
+         angular.forEach($scope.couchIndex, function(item) {
+             total += item.CouchPetPrice;
+             console.log(item.CouchPetPrice);
+         }) // end forEach for couchIndex
+
+         return total;
+      }
+
+
+  }); // end GET from dogs-couch
 
 
 
 
-    }); // end GET from dogs-couch
 
 
 
 
 
-
-
-
-
-  }); // end mainApp.controller
+}); // end mainApp.controller

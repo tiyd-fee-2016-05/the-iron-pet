@@ -9,7 +9,7 @@ $highlight3: #675B65;
 
 $susy: (
   columns: 12,
-  container: 100%
+  container: 90%
 );
 
   main {
@@ -24,23 +24,34 @@ $susy: (
     margin: 1em 0 0 1.07em;
   }
 
+  .couch-pet-info {
+    @include span( 12 of 12 );
+  }
+
   .pet-couch-pic {
     @include span( 2 of 12 );
-    display: block;
     float: left;
-    clear: right;
     margin-top: 2.5em;
-    z-index: 1;
   }
 
   .couch-pet-name {
+    @include span( 1 of 12 );
     font-size: 1.75em;
+  }
+
+  .couch-pet-price {
+    @include span( 1 of 12 );
+    position: relative;
+    top: .35em;
+    right: 1em;
+    font-size: 1.25em;
   }
 
   .couch-days {
     position: relative;
     top: .35em;
-    right: 7%;
+    right: 10%;
+    font-size: 1.25em;
   }
 
   .cart-details {
@@ -52,13 +63,20 @@ $susy: (
   .cart-num-days {
     position: relative;
     top: .35em;
-    right: 18%;
+    right: 21%;
+    font-size: 1.25em;
+  }
+
+  input {
+    width: 2.15em;
+    margin-left: .25em;
+    font-size: .75em;
   }
 
   .fa-times {
-    position: absolute;
-    top: 23.35%;
-    left: 55%;
+    position: relative;
+    bottom: .45em;
+    left: 60%;
     cursor: pointer;
   }
 

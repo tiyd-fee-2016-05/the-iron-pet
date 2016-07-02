@@ -201,7 +201,7 @@ button {
     top: 1.75em; }
 
 main {
-  max-width: 100%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   height: 36em;
@@ -216,23 +216,39 @@ main {
   font-size: 1.75em;
   margin: 1em 0 0 1.07em; }
 
+.couch-pet-info {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
 .pet-couch-pic {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
-  display: block;
   float: left;
-  clear: right;
-  margin-top: 2.5em;
-  z-index: 1; }
+  margin-top: 2.5em; }
 
 .couch-pet-name {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
   font-size: 1.75em; }
+
+.couch-pet-price {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  position: relative;
+  top: .35em;
+  right: 1em;
+  font-size: 1.25em; }
 
 .couch-days {
   position: relative;
   top: .35em;
-  right: 7%; }
+  right: 10%;
+  font-size: 1.25em; }
 
 .cart-details {
   width: 15.25424%;
@@ -244,12 +260,18 @@ main {
 .cart-num-days {
   position: relative;
   top: .35em;
-  right: 18%; }
+  right: 21%;
+  font-size: 1.25em; }
+
+input {
+  width: 2.15em;
+  margin-left: .25em;
+  font-size: .75em; }
 
 .fa-times {
-  position: absolute;
-  top: 23.35%;
-  left: 55%;
+  position: relative;
+  bottom: .45em;
+  left: 60%;
   cursor: pointer; }
 
 .checkout-pad {

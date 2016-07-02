@@ -80,7 +80,7 @@ mainApp.controller('PetController', function($scope, $http){
         console.log("Purchased Pet: " + $scope.petCouchIndex);
         console.log( "pet list: " + $scope.petList);
         // post the index to dogs-couch
-        $scope.couchIndex = JSON.stringify({ index: $scope.petCouchIndex, CouchPetPhoto: $scope.petList[$scope.petCouchIndex].PetPhoto, CouchPetName: $scope.petList[$scope.petCouchIndex].PetName });
+        $scope.couchIndex = JSON.stringify({ index: $scope.petCouchIndex, CouchPetPhoto: $scope.petList[$scope.petCouchIndex].PetPhoto, CouchPetName: $scope.petList[$scope.petCouchIndex].PetName, CouchPetPrice: $scope.petList[$scope.petCouchIndex].PetPrice });
         $http.post('http://localhost:3007/dogs-couch', $scope.couchIndex )
           .then(function successCallback(response) {
             console.log( "Current dog on couch: " + response.data.index );
@@ -96,9 +96,33 @@ mainApp.controller('PetController', function($scope, $http){
     $http.get("http://localhost:3007/dogs-couch").success( function(data) {
        $scope.couchIndex = data; // this will be used on couchView to loop through list of dogs on couch
        console.log($scope.couchIndex);
-    });
 
 
 
 
-  });
+       
+
+
+       $scope.total = function() {
+           var total = 0;
+           angular.forEach($scope.couchIndex, function(item) {
+               total += item.CouchPetPrice;
+           })
+
+           return total;
+       }
+
+
+
+
+    }); // end GET from dogs-couch
+
+
+
+
+
+
+
+
+
+  }); // end mainApp.controller

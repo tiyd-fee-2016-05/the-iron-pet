@@ -26,7 +26,11 @@ $susy: (
 
   .pet-couch-pic {
     @include span( 2 of 12 );
+    display: block;
+    float: left;
+    clear: right;
     margin-top: 2.5em;
+    z-index: 1;
   }
 
   .couch-pet-name {
@@ -62,6 +66,7 @@ $susy: (
     // margin: 0 0 5% 35%;
     position: absolute;
     right: 5%;
+    z-index: 0;
   }
 
   .checkout-total {

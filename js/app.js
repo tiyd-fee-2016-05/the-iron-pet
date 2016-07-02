@@ -62,16 +62,41 @@ mainApp.controller('PetController', function($scope, $http){
       }, function errorCallback(response) {
         console.log( $scope.indexClicked );
       });
-
-
     } // end goToDetails
 
+      // GET index from dogs-index to help display appropriate dogs data on petDetails.html
       $http.get("http://localhost:3007/dogs-index").success( function(data) {
          $scope.petIndex = data[data.length - 1].index;
-         console.log($scope.petIndex[$scope.indexClicked]);
+         console.log($scope.petIndex);
       });
 
 
+    // function to grab index of pet in petDetails.html when you click "Add to couch"
+    $scope.goToCouch = function(pet) {
+      $scope.petCouchIndex;
+      // grab the index of this pet from dogs-index
+      $http.get("http://localhost:3007/dogs-index").success( function(data) {
+        $scope.petCouchIndex = data[data.length - 1].index;
+        console.log("Purchased Pet: " + $scope.petCouchIndex);
+        console.log( "pet list: " + $scope.petList);
+        // post the index to dogs-couch
+        $scope.couchIndex = JSON.stringify({ index: $scope.petCouchIndex, CouchPetPhoto: $scope.petList[$scope.petCouchIndex].PetPhoto, CouchPetName: $scope.petList[$scope.petCouchIndex].PetName });
+        $http.post('http://localhost:3007/dogs-couch', $scope.couchIndex )
+          .then(function successCallback(response) {
+            console.log( "Current dog on couch: " + response.data.index );
+            $scope.dogsOnCouch = response.data;
+          }, // end success
+          function errorCallback(response) {
+            console.log( "Miserable Failure!!!" );
+          });
+        }); // end failure
+    } // end goToCouch
+
+    // GET index from dogs-index to help display appropriate dogs data on couchView.html
+    $http.get("http://localhost:3007/dogs-couch").success( function(data) {
+       $scope.couchIndex = data; // this will be used on couchView to loop through list of dogs on couch
+       console.log($scope.couchIndex);
+    });
 
 
 

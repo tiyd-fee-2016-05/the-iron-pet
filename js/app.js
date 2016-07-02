@@ -98,33 +98,25 @@ mainApp.controller('PetController', function($scope, $http){
        console.log($scope.couchIndex);
 
 
+// OK, SO I NEED A FUNCTION THAT WILL UPDATE NUMDAYS WHEN A BUTTON...YET TO BE MADE ON COUCHVIEW...IS CLICKED...THIS WILL PROBABLY NOT WORK, THOUGH!!!
 
-
-       $scope.invoice = [ {numDays: 1} ];
-
-
+      $scope.invoice = [ {numDays: 1} ];
       $scope.invoice.push({
-        numDays: 1
+        numDays: 2
       });
 
       // $scope.numDays = $('.couchDays[name="couchDogDays"]').val();
       $scope.couchDogDays = {numDays: 1};
-
+      console.log($scope.invoice[2].numDays);
       $scope.total = function() {
-         var days = 0;
          var total = 0;
 
-         angular.forEach($scope.invoice, function(item) {
-             days = item.numDays;
-             console.log(item.numDays);
-         }) // end forEach for couchIndex
-
-         angular.forEach($scope.couchIndex, function(item) {
-             total += item.CouchPetPrice;
-             console.log(item.CouchPetPrice);
-         }) // end forEach for couchIndex
-
-         return total;
+        //  for( var index = 0; index < $scope.couchIndex.length; index++ ) {
+        //    total += $scope.invoice[index].numDays * $scope.couchIndex[index].CouchPetPrice;
+        //    console.log(total);
+        //  } // end for loop
+         //
+        //  return total;
       }
 
 

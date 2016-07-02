@@ -7,7 +7,7 @@
         <li class="couch-pet-name cart-details">{{couch.CouchPetName}}</li>
         <li class="couch-pet-price cart-details">{{couch.CouchPetPrice | currency}}</li>
         <li class="couch-days cart-details">Number of days</li>
-        <li class="cart-details cart-num-days"><input type="number" class="couchDays" ng-model="item" min="1" value="1"><span class="fa fa-times cart-details" aria-hidden="true"></span></li>
+        <li class="cart-details cart-num-days"><input type="number" class="couchDays" ng-model="item.qty" min="1" value="1"><span class="fa fa-times cart-details" aria-hidden="true"></span></li>
       </ul>
     </li>
   </ul>
@@ -16,6 +16,7 @@
     <ul>
       <li>Total</li>
       <li>{{total() | currency}}</li>
+      <li>{{invoice.numDays * couch.CouchPetPrice | currency}}</li>
       <li><button class="checkout-button">Checkout</button></li>
     </ul>
   </div>

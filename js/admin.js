@@ -14,9 +14,12 @@ $('.NewPuppy').click(function (e) {
       "PetDescription": $('input[name="savePetDesc"]').val(),
 
     }
-    .success(function(data, status, headers, config) {
-
-        console.log("Successful post!" + data)
+    .success(function(data, status){
+      console.log("Successful post!");
+    ))});
+    });
+    });
+    });
       });)
     });
 });

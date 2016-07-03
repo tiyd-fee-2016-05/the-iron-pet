@@ -1,0 +1,49 @@
+.addPetForm{
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    left: 50%;
+    top: 21.5%;
+    background-color: white;
+    bottom:50%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+input {
+  height: 2em;
+  border-radius: .5em;
+  margin-bottom: .5em;
+
+}
+
+.schnauzeroverlay{
+  width:50%;
+}
+
+.details {
+    color: #675b65;
+}
+
+.addTitle{
+  font-family: sans-serif;
+  color:black;
+  font-size: 45px;
+}
+
+.titlePaw {
+  color: #89767C;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 25%;
+  left: 20%;
+
+}
+
+.savePet
+{
+  background-color:  #89767C;
+  margin-left: 10%;
+  height: 4em;
+
+}

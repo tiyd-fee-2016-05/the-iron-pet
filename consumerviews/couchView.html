@@ -15,9 +15,10 @@
   <div class="checkout-total">
     <ul>
       <li>Total</li>
-      <li>{{total() | currency}}</li>
+      <!-- <li>{{total() | currency}}</li> -->
+      <li>{{grandTotal | currency}}</li>
       <li>{{invoice.numDays * couch.CouchPetPrice | currency}}</li>
-      <li><button class="checkout-button">Checkout</button></li>
+      <!-- <li><button class="checkout-button">Checkout</button></li> -->
     </ul>
   </div>
 </main>

@@ -97,14 +97,38 @@ mainApp.controller('PetController', function($scope, $http){
        $scope.couchIndex = data; // this will be used on couchView to loop through list of dogs on couch
        console.log($scope.couchIndex);
 
+
+       $scope.grandTotal = 0;
+       for( var index = 0; index < $scope.couchIndex.length; index++ ) {
+         $scope.grandTotal += $scope.couchIndex[index].CouchPetPrice;
+       }
+
        $scope.updateCart = function(couch) {
-         $scope.dogDaysClicked = $scope.couchIndex.indexOf(couch);
-        //  $scope.numInputs = $( ".couchDays[name='qty']" ).val();
+         console.log("GrandTotal: " + $scope.grandTotal);
+        $scope.dogDaysClicked = $scope.couchIndex.indexOf(couch);
         $scope.couchInputs = $( ".couchDays" );
         $scope.numInputs = $( $scope.couchInputs[$scope.dogDaysClicked]);
-        //  $scope.numInputs = $( $scope.couchInputs[name="qty"]).indexOf(couch).val();
-         console.log( $scope.couchIndex.indexOf(couch) );
-         console.log( $scope.numInputs[0].value );
+        $scope.numInputsValue = $scope.numInputs[0].value;
+        console.log( $scope.couchIndex.indexOf(couch) );
+        console.log( $scope.numInputsValue ); // this is the number I need to multiply the PetPrice by
+
+
+
+
+        // $scope.total = function() {
+          //  var total = 0;
+          //  for( var index = 0; index < $scope.couchIndex.length; index++ ) {
+          //   //  total += $scope.numInputs[index].value * $scope.couchIndex[index].CouchPetPrice;
+          //   $scope.grandTotal += $scope.numInputsValue * $scope.couchIndex[index].CouchPetPrice;
+          //    console.log("Total: " + $scope.grandTotal);
+          //  } // end for loop
+
+           return $scope.grandTotal;
+        // } // end total()
+
+
+
+
        } // end updateCart()
 
 

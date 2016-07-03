@@ -97,27 +97,34 @@ mainApp.controller('PetController', function($scope, $http){
        $scope.couchIndex = data; // this will be used on couchView to loop through list of dogs on couch
        console.log($scope.couchIndex);
 
+       $scope.updateCart = function(couch) {
+         $scope.dogDaysClicked = $scope.couchIndex.indexOf(couch);
+        //  $scope.numInputs = $( ".couchDays[name='qty']" ).val();
+        $scope.couchInputs = $( ".couchDays" );
+        $scope.numInputs = $( $scope.couchInputs[$scope.dogDaysClicked]);
+        //  $scope.numInputs = $( $scope.couchInputs[name="qty"]).indexOf(couch).val();
+         console.log( $scope.couchIndex.indexOf(couch) );
+         console.log( $scope.numInputs[0].value );
+       } // end updateCart()
+
 
 // OK, SO I NEED A FUNCTION THAT WILL UPDATE NUMDAYS WHEN A BUTTON...YET TO BE MADE ON COUCHVIEW...IS CLICKED...THIS WILL PROBABLY NOT WORK, THOUGH!!!
 
-      $scope.invoice = [ {numDays: 1} ];
-      $scope.invoice.push({
-        numDays: 2
-      });
+
 
       // $scope.numDays = $('.couchDays[name="couchDogDays"]').val();
-      $scope.couchDogDays = {numDays: 1};
-      console.log($scope.invoice[2].numDays);
-      $scope.total = function() {
-         var total = 0;
-
-        //  for( var index = 0; index < $scope.couchIndex.length; index++ ) {
-        //    total += $scope.invoice[index].numDays * $scope.couchIndex[index].CouchPetPrice;
-        //    console.log(total);
-        //  } // end for loop
-         //
-        //  return total;
-      }
+      // $scope.couchDogDays = {numDays: 1};
+      // console.log($scope.invoice[1].numDays);
+      // $scope.total = function() {
+      //    var total = 0;
+      //
+      //    for( var index = 0; index < $scope.couchIndex.length; index++ ) {
+      //      total += $scope.invoice[index].numDays * $scope.couchIndex[index].CouchPetPrice;
+      //      console.log(total);
+      //    } // end for loop
+      //
+      //    return total;
+      // }
 
 
   }); // end GET from dogs-couch

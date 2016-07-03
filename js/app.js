@@ -112,6 +112,23 @@ mainApp.controller('PetController', function($scope, $http){
         console.log( $scope.couchIndex.indexOf(couch) );
         console.log( $scope.numInputsValue ); // this is the number I need to multiply the PetPrice by
 
+        var clicksUp = 0;
+        if( $scope.numInputsValue > clicksUp ) {
+          clicksUp = clicksUp + 1;
+          console.log( "Input Clicks Up: " + $scope.numInputsValue );
+          console.log( "Clicks Up: " + clicksUp );
+          $scope.grandTotal -= $scope.couchIndex[$scope.dogDaysClicked].CouchPetPrice * ($scope.numInputsValue - 1);
+          $scope.grandTotal += $scope.couchIndex[$scope.dogDaysClicked].CouchPetPrice * $scope.numInputsValue;
+
+        }
+
+        else {
+          clicksUp = $scope.numInputsValue;
+          console.log( "Else Clicks Up: " + clicksUp );
+          $scope.grandTotal -= $scope.couchIndex[$scope.dogDaysClicked].CouchPetPrice * ($scope.numInputsValue);
+
+        }
+
 
 
 

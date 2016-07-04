@@ -9,7 +9,7 @@ $highlight3: #675B65;
 
 $susy: (
   columns: 12,
-  container: 100%
+  container: 90%
 );
 
   main {
@@ -24,19 +24,34 @@ $susy: (
     margin: 1em 0 0 1.07em;
   }
 
+  .couch-pet-info {
+    @include span( 12 of 12 );
+  }
+
   .pet-couch-pic {
     @include span( 2 of 12 );
+    float: left;
     margin-top: 2.5em;
   }
 
   .couch-pet-name {
+    @include span( 1 of 12 );
     font-size: 1.75em;
+  }
+
+  .couch-pet-price {
+    @include span( 1 of 12 );
+    position: relative;
+    top: .35em;
+    right: 1em;
+    font-size: 1.25em;
   }
 
   .couch-days {
     position: relative;
     top: .35em;
-    right: 7%;
+    right: 10%;
+    font-size: 1.25em;
   }
 
   .cart-details {
@@ -48,13 +63,20 @@ $susy: (
   .cart-num-days {
     position: relative;
     top: .35em;
-    right: 18%;
+    right: 21%;
+    font-size: 1.25em;
+  }
+
+  input {
+    width: 2.15em;
+    margin-left: .25em;
+    font-size: .75em;
   }
 
   .fa-times {
-    position: absolute;
-    top: 23.35%;
-    left: 55%;
+    position: relative;
+    bottom: .45em;
+    left: 60%;
     cursor: pointer;
   }
 
@@ -62,23 +84,24 @@ $susy: (
     // margin: 0 0 5% 35%;
     position: absolute;
     right: 5%;
+    z-index: 0;
   }
 
   .checkout-total {
     position: absolute;
-    top: 40%;
-    left: 81%;
+    top: 42%;
+    right: 10.5%;
     font-size: 1.5em;
     line-height: 1.6em;
   }
 
   .checkout-button {
-    width: 7em;
-    height: 2em;
+    width: 5em;
+    height: 1.5em;
     border-radius: 5px;
     position: absolute;
-    top: 105%;
-    right: -42%;
+    top: 115%;
+    right: -20.5%;
     cursor: pointer;
-    font-size: 1.05em;
+    font-size: .85em;
   }

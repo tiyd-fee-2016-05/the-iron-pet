@@ -1,13 +1,15 @@
-<main>
+<main ng-controller="PetController as pets">
   <h1 class="couch-h1">Your Couch</h1>
-  <ul>
+  <ul ng-repeat= "couch in couchIndex">
     <li>
-      <ul>
-        <li><img class="pet-couch-pic" src="../images/dog-4.jpg"></li>
-        <li class="couch-pet-name cart-details">Sparky</li>
+      <ul class="couch-pet-info">
+        <li><img class="pet-couch-pic" src={{couch.CouchPetPhoto}}></li>
+        <li class="couch-pet-name cart-details">{{couch.CouchPetName}}</li>
+        <li class="couch-pet-price cart-details">{{couch.CouchPetPrice | currency}}</li>
         <li class="couch-days cart-details">Number of days</li>
-        <li class="cart-details cart-num-days"><input type="number"></li>
-        <li><span class="fa fa-times cart-details" aria-hidden="true"></span></li>
+        <li class="cart-details cart-num-days"><input type="number" class="couchDays" ng-click="updateCart(couch)" name="qty" min="1" value="1">
+          <span class="fa fa-times cart-details" aria-hidden="true" ng-click="removeItem($index)"></span>
+        </li>
       </ul>
     </li>
   </ul>
@@ -15,8 +17,9 @@
   <div class="checkout-total">
     <ul>
       <li>Total</li>
-      <li>$575.00</li>
-      <li><button class="checkout-button">Checkout</button></li>
+      <li>{{grandTotal | currency}}</li>
+      <li>{{invoice.numDays * couch.CouchPetPrice | currency}}</li>
+      <li><a href="#/checkout"><button class="checkout-button" ng-click="goToReceipt()">Checkout</button></a></li>
     </ul>
   </div>
 </main>

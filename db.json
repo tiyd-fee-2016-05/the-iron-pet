@@ -1,6 +1,7 @@
 {
   "dogs": [
     {
+      "id": 0,
       "PetNumber": "0",
       "PetName": "Friendly",
       "PetPhoto": "images/dog-3.jpg",
@@ -11,6 +12,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 1,
       "PetNumber": "1",
       "PetName": "Leo",
       "PetPhoto": "images/dog-4.jpg",
@@ -21,6 +23,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 2,
       "PetNumber": "2",
       "PetName": "Milo",
       "PetPhoto": "images/dog-5.jpg",
@@ -31,6 +34,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 3,
       "PetNumber": "3",
       "PetName": "Barry",
       "PetPhoto": "images/dog-6.jpg",
@@ -41,6 +45,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 4,
       "PetNumber": "4",
       "PetName": "Buster",
       "PetPhoto": "images/dog-7.jpg",
@@ -51,6 +56,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 5,
       "PetNumber": "5",
       "PetName": "Hank",
       "PetPhoto": "images/dog-8.jpeg",
@@ -61,6 +67,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 6,
       "PetNumber": "6",
       "PetName": "Reggie",
       "PetPhoto": "images/dog-9.jpg",
@@ -71,6 +78,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 7,
       "PetNumber": "7",
       "PetName": "Nathaniel",
       "PetPhoto": "images/dog-10.jpeg",
@@ -81,6 +89,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 8,
       "PetNumber": "8",
       "PetName": "Morgan",
       "PetPhoto": "images/dog-11.jpg",
@@ -91,6 +100,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 9,
       "PetNumber": "9",
       "PetName": "Tyrion",
       "PetPhoto": "images/dog-1.jpg",
@@ -101,6 +111,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 10,
       "PetNumber": "10",
       "PetName": "Hermione",
       "PetPhoto": "images/dog-2.jpg",
@@ -111,6 +122,7 @@
       "PetDescription": "A loveable young lady with a heart of gold!"
     },
     {
+      "id": 11,
       "PetNumber": "11",
       "PetName": "Katniss",
       "PetPhoto": "images/dog-5.jpg",
@@ -119,116 +131,57 @@
       "FavActivity": "Napping",
       "FavSnack": "Beggin Strips",
       "PetDescription": "A loveable young lady with a heart of gold!"
+    },
+    {
+      "PetNumber": 12,
+      "PetName": "Lucy",
+      "PetPhoto": "images/dog-3.jpg",
+      "PetBreed": "Schnauzer",
+      "PetPrice": 30,
+      "FavActivity": "Napping",
+      "FavSnack": "Beggin Strips",
+      "PetDescription": "A loveable young lady with a heart of gold!",
+      "id": 12
     }
   ],
   "dogs-index": [
     {
-      "index": 0,
-      "id": 9
-    },
-    {
-      "index": 2,
-      "id": 10
-    },
-    {
-      "index": 3,
-      "id": 11
-    },
-    {
-      "index": 5,
-      "id": 12
-    },
-    {
-      "index": 4,
-      "id": 13
-    },
-    {
-      "index": 6,
-      "id": 14
-    },
-    {
-      "index": 2,
-      "id": 15
-    },
-    {
       "index": 1,
-      "id": 16
-    },
-    {
-      "index": 2,
-      "id": 17
-    },
-    {
-      "index": 2,
-      "id": 18
-    },
-    {
-      "index": 2,
-      "id": 19
-    },
-    {
-      "index": 2,
-      "id": 20
-    },
-    {
-      "index": 8,
-      "id": 21
-    },
-    {
-      "index": 7,
-      "id": 22
-    },
-    {
-      "index": 11,
-      "id": 23
-    },
-    {
-      "index": 6,
-      "id": 24
+      "id": 1
     },
     {
       "index": 4,
-      "id": 25
-    },
-    {
-      "index": 7,
-      "id": 26
-    },
-    {
-      "index": 7,
-      "id": 27
-    },
-    {
-      "index": 2,
-      "id": 28
+      "id": 2
     },
     {
       "index": 5,
-      "id": 29
-    },
-    {
-      "index": 4,
-      "id": 30
-    },
-    {
-      "index": 8,
-      "id": 31
-    },
-    {
-      "index": 2,
-      "id": 32
+      "id": 3
     },
     {
       "index": 3,
-      "id": 33
+      "id": 4
     },
     {
-      "index": 4,
-      "id": 34
+      "index": 7,
+      "id": 5
+    },
+    {
+      "index": 6,
+      "id": 6
     },
     {
       "index": 5,
-      "id": 35
+      "id": 7
     }
-  ]
+  ],
+  "dogs-couch": [
+    {
+      "index": 6,
+      "CouchPetPhoto": "images/dog-9.jpg",
+      "CouchPetName": "Reggie",
+      "CouchPetPrice": 30,
+      "id": 2
+    }
+  ],
+  "dogs-receipt": []
 }

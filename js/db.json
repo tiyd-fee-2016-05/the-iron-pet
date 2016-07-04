@@ -142,26 +142,6 @@
       "FavSnack": "Beggin Strips",
       "PetDescription": "A loveable young lady with a heart of gold!",
       "id": 12
-    },
-    {
-      "PetNumber": 13,
-      "PetName": "Lucky",
-      "PetPhoto": "asf",
-      "PetBreed": "dafl",
-      "PetPrice": "daf",
-      "FavActivity": "adsf",
-      "FavSnack": "sfa",
-      "id": 13
-    },
-    {
-      "PetNumber": 13,
-      "PetName": "Puppy",
-      "PetPhoto": "http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg",
-      "PetBreed": "Puppy",
-      "PetPrice": 20,
-      "FavActivity": "Chewing",
-      "FavSnack": "Allof them",
-      "id": 14
     }
   ],
   "dogs-index": [
@@ -192,126 +172,6 @@
     {
       "index": 5,
       "id": 7
-    },
-    {
-      "index": 1,
-      "id": 8
-    },
-    {
-      "index": 2,
-      "id": 9
-    },
-    {
-      "index": 3,
-      "id": 10
-    },
-    {
-      "index": 1,
-      "id": 11
-    },
-    {
-      "index": 6,
-      "id": 12
-    },
-    {
-      "index": 6,
-      "id": 13
-    },
-    {
-      "index": 6,
-      "id": 14
-    },
-    {
-      "index": 14,
-      "id": 15
-    },
-    {
-      "index": 14,
-      "id": 16
-    },
-    {
-      "index": 14,
-      "id": 17
-    },
-    {
-      "index": 13,
-      "id": 18
-    },
-    {
-      "index": 12,
-      "id": 19
-    },
-    {
-      "index": 14,
-      "id": 20
-    },
-    {
-      "index": 3,
-      "id": 21
-    },
-    {
-      "index": 0,
-      "id": 22
-    },
-    {
-      "index": 0,
-      "id": 23
-    },
-    {
-      "index": 0,
-      "id": 24
-    },
-    {
-      "index": 1,
-      "id": 25
-    },
-    {
-      "index": 1,
-      "id": 26
-    },
-    {
-      "index": 1,
-      "id": 27
-    },
-    {
-      "index": 1,
-      "id": 28
-    },
-    {
-      "index": 0,
-      "id": 29
-    },
-    {
-      "index": 0,
-      "id": 30
-    },
-    {
-      "index": 0,
-      "id": 31
-    },
-    {
-      "index": 0,
-      "id": 32
-    },
-    {
-      "index": 1,
-      "id": 33
-    },
-    {
-      "index": 2,
-      "id": 34
-    },
-    {
-      "index": 1,
-      "id": 35
-    },
-    {
-      "index": 1,
-      "id": 36
-    },
-    {
-      "index": 1,
-      "id": 37
     }
   ],
   "dogs-couch": [
@@ -321,13 +181,6 @@
       "CouchPetName": "Reggie",
       "CouchPetPrice": 30,
       "id": 2
-    },
-    {
-      "index": 1,
-      "CouchPetPhoto": "images/dog-4.jpg",
-      "CouchPetName": "Leo",
-      "CouchPetPrice": 30,
-      "id": 3
     }
   ],
   "dogs-receipt": []

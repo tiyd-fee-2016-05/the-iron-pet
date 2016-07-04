@@ -58,11 +58,13 @@ $susy: (
     width: 10em;
     height: 3em;
     background-color: $beige;
+    margin-top: 5em;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     outline: none;
     font-size: 1.05em;
+    position: absolute;
   }
 
   .pet-profile-pic {

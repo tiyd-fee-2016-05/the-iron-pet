@@ -26,7 +26,7 @@ mainApp.config(function($routeProvider) {
     })
     //Admin View Routes
     .when('/admin', {
-      templateUrl: 'adminviews/addPetAdmin.html',
+      templateUrl: 'adminviews/petListAdmin.html',
           // controller: 'PetController'
     })
     .when('/admindetails', {
@@ -34,7 +34,12 @@ mainApp.config(function($routeProvider) {
           // controller: 'PetController'
     })
     .when('/adminAddPet', {
-      templateUrl: 'adminviews/petListAdmin.html',
+      templateUrl: 'adminviews/addPetAdmin.html',
+          // controller: 'PetController'
+    })
+
+    .when('/deletePet', {
+      templateUrl: 'adminviews/deletePet.html',
           // controller: 'PetController'
     })
     .otherwise({

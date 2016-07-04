@@ -1,10 +1,13 @@
 $('.NewPuppy').click(function (e) {
+  console.log("clicked");
   e.PreventDefault();
 
-  $.post("http://localhost:3007/dogs",
+  $.ajax({
+    method: "POST",
+    url: "http://http://localhost:3007/dogs",
 
-  {
-      "PetNumber":"12",
+    data: {
+      "PetNumber": "12",
       "PetName" : $('input[name="savePetName"]').val(),
       "PetPhoto": $('input[name="savePetPhoto"]').val(),
       "PetBreed": $('input[name="savePetBreed"]').val(),
@@ -15,11 +18,7 @@ $('.NewPuppy').click(function (e) {
 
     }
     .success(function(data, status){
-      console.log("Successful post!");
-    ))});
-    });
-    });
-    });
-      });)
-    });
+      console.log("Successful post!")
+    })
+  });
 });

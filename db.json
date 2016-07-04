@@ -131,37 +131,6 @@
       "FavActivity": "Napping",
       "FavSnack": "Beggin Strips",
       "PetDescription": "A loveable young lady with a heart of gold!"
-    },
-    {
-      "PetNumber": 12,
-      "PetName": "Lucy",
-      "PetPhoto": "images/dog-3.jpg",
-      "PetBreed": "Schnauzer",
-      "PetPrice": 30,
-      "FavActivity": "Napping",
-      "FavSnack": "Beggin Strips",
-      "PetDescription": "A loveable young lady with a heart of gold!",
-      "id": 12
-    },
-    {
-      "PetNumber": 13,
-      "PetName": "Lucky",
-      "PetPhoto": "asf",
-      "PetBreed": "dafl",
-      "PetPrice": "daf",
-      "FavActivity": "adsf",
-      "FavSnack": "sfa",
-      "id": 13
-    },
-    {
-      "PetNumber": 13,
-      "PetName": "Puppy",
-      "PetPhoto": "http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg",
-      "PetBreed": "Puppy",
-      "PetPrice": 20,
-      "FavActivity": "Chewing",
-      "FavSnack": "Allof them",
-      "id": 14
     }
   ],
   "dogs-index": [
@@ -312,6 +281,122 @@
     {
       "index": 1,
       "id": 37
+    },
+    {
+      "index": 0,
+      "id": 38
+    },
+    {
+      "index": 0,
+      "id": 39
+    },
+    {
+      "index": 1,
+      "id": 40
+    },
+    {
+      "index": 4,
+      "id": 41
+    },
+    {
+      "index": 0,
+      "id": 42
+    },
+    {
+      "index": 0,
+      "id": 43
+    },
+    {
+      "index": 0,
+      "id": 44
+    },
+    {
+      "index": 1,
+      "id": 45
+    },
+    {
+      "index": 2,
+      "id": 46
+    },
+    {
+      "index": 0,
+      "id": 47
+    },
+    {
+      "index": 0,
+      "id": 48
+    },
+    {
+      "index": 1,
+      "id": 49
+    },
+    {
+      "index": 2,
+      "id": 50
+    },
+    {
+      "index": 0,
+      "id": 51
+    },
+    {
+      "index": 0,
+      "id": 52
+    },
+    {
+      "index": 0,
+      "id": 53
+    },
+    {
+      "index": 0,
+      "id": 54
+    },
+    {
+      "index": 0,
+      "id": 55
+    },
+    {
+      "index": 0,
+      "id": 56
+    },
+    {
+      "index": 0,
+      "id": 57
+    },
+    {
+      "index": 0,
+      "id": 58
+    },
+    {
+      "index": 0,
+      "id": 59
+    },
+    {
+      "index": 0,
+      "id": 60
+    },
+    {
+      "index": 0,
+      "id": 61
+    },
+    {
+      "index": 0,
+      "id": 62
+    },
+    {
+      "index": 0,
+      "id": 63
+    },
+    {
+      "index": 0,
+      "id": 64
+    },
+    {
+      "index": 0,
+      "id": 65
+    },
+    {
+      "index": 1,
+      "id": 66
     }
   ],
   "dogs-couch": [
@@ -321,13 +406,6 @@
       "CouchPetName": "Reggie",
       "CouchPetPrice": 30,
       "id": 2
-    },
-    {
-      "index": 1,
-      "CouchPetPhoto": "images/dog-4.jpg",
-      "CouchPetName": "Leo",
-      "CouchPetPrice": 30,
-      "id": 3
     }
   ],
   "dogs-receipt": []

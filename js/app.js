@@ -42,6 +42,13 @@ mainApp.config(function($routeProvider) {
       templateUrl: 'adminviews/deletePet.html',
           // controller: 'PetController'
     })
+
+    .when('/deletionDetails', {
+      templateUrl: 'adminviews/deletionDetails.html',
+          // controller: 'PetController'
+    })
+
+
     .otherwise({
       redirectTo: '/home'
     });
@@ -68,6 +75,18 @@ mainApp.controller('PetController', function($scope, $http){
         console.log( $scope.indexClicked );
       });
     } // end goToDetails
+
+    $scope.deletePet = function(pet) {
+      $scope.indexClicked = JSON.stringify({ index: $scope.petList.indexOf(pet) });
+      console.log( $scope.indexClicked );
+
+      $http.post('http://localhost:3007/dogs-index', $scope.indexClicked )
+      .then(function successCallback(response) {
+        console.log( response.data.index );
+      }, function errorCallback(response) {
+        console.log( $scope.indexClicked );
+      });
+    } // end go
 
       // GET index from dogs-index to help display appropriate dogs data on petDetails.html
       $http.get("http://localhost:3007/dogs-index").success( function(data) {

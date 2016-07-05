@@ -7,9 +7,9 @@
 
 <div class="grid grid-pad" ng-controller="PetController as pets">
     <div class="col-1-4"  ng-repeat= "pet in petList">
-  <a href="#/petdetails"><img class="dogpic4" ng-click="deletePet(pet)" src= {{pet.PetPhoto}}>
+  <a href="#/petdetails"><img class="dogpic4" ng-click="goToDetails(pet)" src= {{pet.PetPhoto}}>
   </a>
-  <a href="#/petdetails"<span class="pupName" ng-click="deletePet(pet)">{{pet.PetName}}</span>
+  <a href="#/petdetails"<span class="pupName" ng-click="goToDetails(pet)">{{pet.PetName}}</span>
   </a>
 
   <br>

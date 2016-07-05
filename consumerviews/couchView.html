@@ -1,6 +1,31 @@
+<img class="invoiceOverlay" src="images/couchpups.jpg" alt="Group of Dogs">
+<div class="invoiceContainer" ng-controller="PetController as pets">
+
 <main ng-controller="PetController as pets">
   <h1 class="couch-h1">Your Couch</h1>
-  <ul ng-repeat= "couch in couchIndex">
+
+<div class="col-1-4" ng-repeat="couch in couchIndex">
+    <span class="fa fa-times cart-details" aria-hidden="true" ng-click="removeItem($index)"></span>
+  <img class="pet-couch-pic" src={{couch.CouchPetPhoto}}>
+
+  <span class="DogName">{{couch.CouchPetName}}</span><br>
+  {{couch.CouchPetPrice | currency}} per day <br>
+  Number of Days: <input type="number" class="couchDays" ng-click="updateCart(couch)" name="qty" min="1" value="1">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <ul ng-repeat= "couch in couchIndex">
     <li>
       <ul class="couch-pet-info">
         <li><img class="pet-couch-pic" src={{couch.CouchPetPhoto}}></li>
@@ -8,12 +33,11 @@
         <li class="couch-pet-price cart-details">{{couch.CouchPetPrice | currency}}</li>
         <li class="couch-days cart-details">Number of days</li>
         <li class="cart-details cart-num-days"><input type="number" class="couchDays" ng-click="updateCart(couch)" name="qty" min="1" value="1">
-          <span class="fa fa-times cart-details" aria-hidden="true" ng-click="removeItem($index)"></span>
+
         </li>
       </ul>
     </li>
-  </ul>
-  <img class="checkout-pad" src="images/checkout-pad.jpg">
+  </ul> -->
   <div class="checkout-total">
     <ul>
       <li>Total</li>
@@ -23,3 +47,4 @@
     </ul>
   </div>
 </main>
+</div>

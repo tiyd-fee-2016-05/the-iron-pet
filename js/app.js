@@ -63,30 +63,15 @@ mainApp.controller('PetController', function($scope, $http){
      });
 
      $scope.deleteDog = function(index) {
-       console.log("Something happened!")
-       var id = JSON.stringify($scope.petList[index].id);
-       var deleteconfirmation = prompt("Are you sure you want to delete poor " + $scope.petList[index].PetName + "?");
-       if (deleteconfirmation === "Yes") {
-        $scope.petList.splice(index,1);
-       }else{
-         console.log("Change of heart");
-       }
-      //  $scope.removedDogIndex = $scope.couchIndex[index].index;
-      //  console.log($scope.removedDog);
-
-
+     console.log("Something happened!")
+     var id = JSON.stringify($scope.petList[index].id);
+     var deleteconfirmation = prompt("Are you sure you want to delete poor " + $scope.petList[index].PetName + "?");
+     if (deleteconfirmation === "Yes") {
+      $scope.petList.splice(index,1);
+     }else{
+       console.log("Change of heart");
+     }
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -97,6 +82,7 @@ mainApp.controller('PetController', function($scope, $http){
 
       $http.post('http://localhost:3007/dogs-index', $scope.indexClicked )
       .then(function successCallback(response) {
+        location.reload();
         console.log( response.data.index );
       }, function errorCallback(response) {
         console.log( $scope.indexClicked );
@@ -108,6 +94,8 @@ mainApp.controller('PetController', function($scope, $http){
          $scope.petIndex = data[data.length - 1].index;
          console.log($scope.petIndex);
       });
+
+
 
 
     // function to grab index of pet in petDetails.html when you click "Add to couch"
@@ -193,6 +181,9 @@ mainApp.controller('PetController', function($scope, $http){
 
        }
 
+
+
+
        $scope.goToReceipt = function() {
          console.log( "Yay, we made it to the receipt!" );
          console.log( $scope.couchIndex );
@@ -218,6 +209,8 @@ mainApp.controller('AdminController', function($scope, $http){
       "FavSnack": $('input[name="savePetSnack"]').val(),
       "PetDescription": $('input[name="savePetDesc"]').val(),
     });
+
+
 
 
 

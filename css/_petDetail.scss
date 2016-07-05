@@ -22,10 +22,10 @@ $susy: (
   .continue-browsing {
     @include span( 3 of 12);
     position: relative;
-    top: 4.5em;
+    top: 3em;
     left: 2%;
     text-decoration: none;
-    color: $beige;
+    color: #675B65;
   }
 
   .pet-profile-pic,
@@ -65,6 +65,7 @@ $susy: (
     outline: none;
     font-size: 1.05em;
     position: absolute;
+    top: 30%;
   }
 
   .mainDeleteButton{

@@ -4,7 +4,7 @@
 .allPetsContainer {
   background-color: white;
   position: absolute;
-  top: 20%;
+  top: 22.5%;
   left: 3.5%;
   right: 0;
   margin-left: 1.5%;
@@ -42,7 +42,7 @@
   font-family: sans-serif;
   font-size: 35px;
   color: #cd0033;
-  margin-left: 10%; }
+  margin-left: -10%; }
 
 .nameDelete {
   background: none;
@@ -145,10 +145,10 @@ main {
   float: left;
   margin-right: 1.69492%;
   position: relative;
-  top: 4.5em;
+  top: 3em;
   left: 2%;
   text-decoration: none;
-  color: #E8E5E0; }
+  color: #675B65; }
 
 .pet-profile-pic,
 .continue-browsing {
@@ -183,7 +183,8 @@ p {
   cursor: pointer;
   outline: none;
   font-size: 1.05em;
-  position: absolute; }
+  position: absolute;
+  top: 30%; }
 
 .mainDeleteButton {
   width: 10em;
@@ -255,7 +256,8 @@ main {
   float: left;
   margin-right: 1.69492%;
   float: left;
-  margin-top: 2.5em; }
+  margin-top: 2.5em;
+  width: 10em; }
 
 .couch-pet-name {
   width: 6.77966%;
@@ -268,9 +270,11 @@ main {
   float: left;
   margin-right: 1.69492%;
   position: relative;
-  top: .35em;
+  top: 2em;
   right: 1em;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  left: -1.5em;
+  width: em; }
 
 .couch-days {
   position: relative;
@@ -278,15 +282,26 @@ main {
   right: 10%;
   font-size: 1.25em; }
 
+.couchDays {
+  width: 25px;
+  background: none;
+  outline: none; }
+
+.DogName {
+  color: black;
+  font-size: 30px;
+  margin-left: -22%; }
+
 .cart-details {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   display: inline-block;
-  margin: 6.5% 0 0 5%; }
+  margin: 6.5% 0 0 6.5%; }
 
 .cart-num-days {
   position: relative;
+  width: 3em;
   top: .35em;
   right: 21%;
   font-size: 1.25em; }
@@ -309,10 +324,11 @@ input {
 
 .checkout-total {
   position: absolute;
-  top: 42%;
+  top: 2%;
   right: 10.5%;
   font-size: 1.5em;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  left: 90%; }
 
 .checkout-button {
   width: 5em;
@@ -322,14 +338,15 @@ input {
   top: 115%;
   right: -20.5%;
   cursor: pointer;
-  font-size: .85em; }
+  font-size: .85em;
+  left: 10%; }
 
 .invoiceContainer {
   position: absolute;
   left: 8%;
   width: 83%;
   top: 25%;
-  height: 80%;
+  height: 90%;
   background-color: rgba(137, 118, 124, 0.6);
   border: 1px solid white;
   padding: 5px; }
@@ -430,9 +447,9 @@ a {
 .addPetForm {
   position: absolute;
   width: 35%;
-  height: 60%;
+  height: 61%;
   left: 50%;
-  top: 20.75%;
+  top: 22.75%;
   background-color: white;
   bottom: 50%;
   padding-left: 10%;

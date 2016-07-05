@@ -32,6 +32,7 @@ $susy: (
     @include span( 2 of 12 );
     float: left;
     margin-top: 2.5em;
+    width: 10em;
   }
 
   .couch-pet-name {
@@ -42,9 +43,12 @@ $susy: (
   .couch-pet-price {
     @include span( 1 of 12 );
     position: relative;
-    top: .35em;
+    top: 2em;
     right: 1em;
     font-size: 1.25em;
+    left: -1.5em;
+    width: em;
+
   }
 
   .couch-days {
@@ -54,14 +58,26 @@ $susy: (
     font-size: 1.25em;
   }
 
+  .couchDays{
+    width: 25px;
+    background: none;
+    outline: none;
+  }
+
+  .DogName{
+    color: black;
+    font-size: 30px;
+  margin-left: -22%}
+
   .cart-details {
     @include span( 2 of 12 );
     display: inline-block;
-    margin: 6.5% 0 0 5%;
+    margin: 6.5% 0 0 6.5%;
   }
 
   .cart-num-days {
     position: relative;
+    width: 3em;
     top: .35em;
     right: 21%;
     font-size: 1.25em;
@@ -89,10 +105,11 @@ $susy: (
 
   .checkout-total {
     position: absolute;
-    top: 42%;
+    top: 2%;
     right: 10.5%;
     font-size: 1.5em;
     line-height: 1.6em;
+    left: 90%;
   }
 
   .checkout-button {
@@ -104,4 +121,5 @@ $susy: (
     right: -20.5%;
     cursor: pointer;
     font-size: .85em;
+    left: 10%;
   }

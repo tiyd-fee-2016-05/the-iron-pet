@@ -9,15 +9,16 @@
   <table class="details">
   <tr>
     <th>Description</th>
-    <th>Total</th>
+    <th>Price Per Day</th>
   </tr>
   <tr ng-repeat="dog in couchIndex">
     <td>Time with {{dog.CouchPetName}}</td>
-  </tr>
-  <tr>
-    <td class="receipt-total">{{grandTotal | currency}}</td>
+    <td>{{dog.CouchPetPrice}} </td>
   </tr>
 </table>
+
+
+<p class="invoicetext"> Your order total: {{grandTotal | currency}}</p>
 
 
 

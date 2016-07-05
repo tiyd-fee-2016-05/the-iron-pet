@@ -22,7 +22,7 @@ $susy: (
   .continue-browsing {
     @include span( 3 of 12);
     position: relative;
-    top: 2.5em;
+    top: 4.5em;
     left: 2%;
     text-decoration: none;
     color: $beige;
@@ -54,7 +54,7 @@ $susy: (
     left: 2%;
   }
 
-  button {
+  .addtoCouchbutton{
     width: 10em;
     height: 3em;
     background-color: $beige;
@@ -65,6 +65,20 @@ $susy: (
     outline: none;
     font-size: 1.05em;
     position: absolute;
+  }
+
+  .mainDeleteButton{
+    width: 10em;
+    height: 3em;
+    background-color: #cd0033;
+    margin-top: 5em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.05em;
+    position: absolute;
+    top: 55%;
   }
 
   .pet-profile-pic {

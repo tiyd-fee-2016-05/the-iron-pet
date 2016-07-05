@@ -62,6 +62,33 @@ mainApp.controller('PetController', function($scope, $http){
         console.log(data)
      });
 
+     $scope.deleteDog = function(index) {
+       console.log("Something happened!")
+       var id = JSON.stringify($scope.petList[index].id);
+       var deleteconfirmation = prompt("Are you sure you want to delete poor " + $scope.petList[index].PetName + "?");
+       if (deleteconfirmation === "Yes") {
+        $scope.petList.splice(index,1);
+       }else{
+         console.log("Change of heart");
+       }
+      //  $scope.removedDogIndex = $scope.couchIndex[index].index;
+      //  console.log($scope.removedDog);
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 
      // new stuff added before commit/push
     $scope.goToDetails = function(pet) {
@@ -75,18 +102,6 @@ mainApp.controller('PetController', function($scope, $http){
         console.log( $scope.indexClicked );
       });
     } // end goToDetails
-
-    $scope.deletePet = function(pet) {
-      $scope.indexClicked = JSON.stringify({ index: $scope.petList.indexOf(pet) });
-      console.log( $scope.indexClicked );
-
-      $http.post('http://localhost:3007/dogs-index', $scope.indexClicked )
-      .then(function successCallback(response) {
-        console.log( response.data.index );
-      }, function errorCallback(response) {
-        console.log( $scope.indexClicked );
-      });
-    } // end go
 
       // GET index from dogs-index to help display appropriate dogs data on petDetails.html
       $http.get("http://localhost:3007/dogs-index").success( function(data) {

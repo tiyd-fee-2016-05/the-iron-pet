@@ -1,3 +1,4 @@
+<div class= "allPetsContainer">
 <main ng-controller="PetController as pets">
   <img class="pet-profile-pic" src={{petList[petIndex].PetPhoto}}>
   <a class="continue-browsing" href="/#availablePets"><span class="fa fa-angle-left" aria-hidden="true"></span>
@@ -7,9 +8,8 @@
 
     <h1 class="detail-pet-name">{{petList[petIndex].PetName}}</h1>
     <h2 class="detail-pet-price">{{petList[petIndex].PetPrice | currency}}</h2>
-    <p>Jax in one word is fantastic! He is a big bundle of love and affection. Jax loves to play with other dogs,
-       he is a young dog who sees the world through puppy goggles.</p>
-    <a href="#/MyCouch"><button ng-click="goToCouch(pet)">Add to couch</button></a>
+    <p>{{petList[petIndex].PetName}}</p>
+    <a href="#/MyCouch"><button class="addtoCouchbutton" ng-click="goToCouch(pet)">Add to couch</button></a>
 
   </section>
   <section class="pet-details">
@@ -40,3 +40,4 @@
     </ul>
   </section>
 </main>
+</div>

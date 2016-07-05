@@ -7,11 +7,15 @@
 
 <div class="grid grid-pad" ng-controller="PetController as pets">
     <div class="col-1-4"  ng-repeat= "pet in petList">
-  <img class="dogpic4" src= {{pet.PetPhoto}}>
-  <span class="pupName">{{pet.PetName}}</span>
+  <a href="#/petdetails"><img class="dogpic4" ng-click="deletePet(pet)" src= {{pet.PetPhoto}}>
+  </a>
+  <a href="#/petdetails"<span class="pupName" ng-click="deletePet(pet)">{{pet.PetName}}</span>
+  </a>
 
   <br>
-  <a href="#/petdetails"<button class="pupDetails" ng-click="goToDetails(pet)">Profile <i class="fa fa-paw" aria-hidden="true"></i></button></a>
     </div>
+  </div>
+
+</div>
 
     <script src="js/PetController.js"></script>

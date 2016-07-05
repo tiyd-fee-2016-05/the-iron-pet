@@ -1,7 +1,7 @@
 .allPetsContainer {
     background-color: white;
     position: absolute;
-    top: 21%;
+    top: 20%;
     left: 3.5%;
     right: 0;
     margin-left: 1.5%;
@@ -15,14 +15,15 @@
     text-align: center;
 }
 .dogpic4 {
-    width: 11em;
+    width: 14em;
     /* 95/16 */
-    height: 6em;
+    height: 9em;
     margin-left: 5%;
+    border-radius: 4px;
 }
 .pupName {
     font-family: sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     color: #675B65;
     margin-left: 10%;
 }
@@ -34,6 +35,21 @@
     height: 25px;
     width: 90px;
 }
+
+.pupName2 {
+    font-family: sans-serif;
+    font-size: 35px;
+    color:#cd0033;
+    margin-left: 10%;
+}
+
+.nameDelete{
+  background: none;
+border: none;
+outline: none;
+margin-left: 20%;
+}
+
 /*
   Simple Grid
   Project Page - http://thisisdallas.github.com/Simple-Grid/

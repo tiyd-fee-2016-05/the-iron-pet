@@ -8,10 +8,12 @@
 <div class="grid grid-pad" ng-controller="PetController as pets">
     <div class="col-1-4"  ng-repeat= "pet in petList">
   <img class="dogpic4" src= {{pet.PetPhoto}}>
-  <span class="pupName">{{pet.PetName}}</span>
+    <button class="nameDelete">
+      <span class="pupName2" ng-click="deleteDog($index)">{{pet.PetName}}
+      </span>
+    </button>
 
   <br>
-  <a href="#/deletionDetails"<button class="pupDetails" ng-click="deletePet(pet)">Delete <i class="fa fa-paw" aria-hidden="true"></i></button></a>
-    </div>
+
 
     <script src="js/PetController.js"></script>

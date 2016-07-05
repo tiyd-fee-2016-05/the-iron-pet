@@ -4,7 +4,7 @@
 .allPetsContainer {
   background-color: white;
   position: absolute;
-  top: 21%;
+  top: 20%;
   left: 3.5%;
   right: 0;
   margin-left: 1.5%;
@@ -18,14 +18,15 @@
   text-align: center; }
 
 .dogpic4 {
-  width: 11em;
+  width: 14em;
   /* 95/16 */
-  height: 6em;
-  margin-left: 5%; }
+  height: 9em;
+  margin-left: 5%;
+  border-radius: 4px; }
 
 .pupName {
   font-family: sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   color: #675B65;
   margin-left: 10%; }
 
@@ -36,6 +37,18 @@
   color: white;
   height: 25px;
   width: 90px; }
+
+.pupName2 {
+  font-family: sans-serif;
+  font-size: 35px;
+  color: #cd0033;
+  margin-left: 10%; }
+
+.nameDelete {
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 20%; }
 
 /*
   Simple Grid
@@ -132,7 +145,7 @@ main {
   float: left;
   margin-right: 1.69492%;
   position: relative;
-  top: 2.5em;
+  top: 4.5em;
   left: 2%;
   text-decoration: none;
   color: #E8E5E0; }
@@ -160,7 +173,7 @@ p {
   position: relative;
   left: 2%; }
 
-button {
+.addtoCouchbutton {
   width: 10em;
   height: 3em;
   background-color: #E8E5E0;
@@ -171,6 +184,19 @@ button {
   outline: none;
   font-size: 1.05em;
   position: absolute; }
+
+.mainDeleteButton {
+  width: 10em;
+  height: 3em;
+  background-color: #cd0033;
+  margin-top: 5em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.05em;
+  position: absolute;
+  top: 55%; }
 
 .pet-profile-pic {
   width: 49.15254%;
